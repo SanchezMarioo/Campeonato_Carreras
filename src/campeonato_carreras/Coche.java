@@ -133,7 +133,7 @@ public class Coche {
         double potenciadorConsumo = velocidadCarrera / velocidadBase;
         double distanciaKm = distanciaTurno / 1000.0;
         double consumoTurno = distanciaKm * (this.consumoBase * potenciadorConsumo);
-        if (combustible >= potenciadorConsumo) {
+        if (combustible >= consumoTurno) {
             combustible -= consumoTurno;
             distanciaRecorrida += distanciaTurno;
         } else {
